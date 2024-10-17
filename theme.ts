@@ -1,7 +1,16 @@
 "use client";
 
-import { createTheme } from "@mantine/core";
+import { createTheme, Button } from "@mantine/core";
 
 export const theme = createTheme({
-  /* Put your mantine theme override here */
+  components: {
+	Button: Button.extend({
+	  defaultProps: {
+		color: '#3a6bff'
+	  },
+	}),
+  },
+  colors: {
+	  'cherry': ['#3a6bff']
+  }
 });

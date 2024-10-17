@@ -1,0 +1,33 @@
+.card {
+  background-color: var(--mantine-color-body);
+  max-width: 300px;
+  cursor: pointer;
+  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  transition: all .5s ease;
+}
+
+.card:hover {
+	transform: translate3D(0,-1px,0) scale(1.03);
+	box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+	transition: all .4s ease;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--mantine-spacing-sm) var(--mantine-spacing-lg);
+  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+}
+
+.title {
+  font-family:
+	Greycliff CF,
+	var(--mantine-font-family);
+  line-height: 1;
+}
+
+.check {
+	position: absolute;
+	margin: 5px;
+	right: 0;
+}
